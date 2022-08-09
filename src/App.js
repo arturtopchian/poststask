@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Form from "./Form";
+import Posts from "./Posts";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// First of all run npm i
+// run project npm start
+// Ignore Form component now.
+// Go to Posts
+
+const App = () => {
+    return (
+        <div className="container">
+            <h1>FORM BLOGPOST</h1>
+            <hr/>
+            <Form/>
+            <hr/>
+            <Posts/>
+        </div>
+    )
 }
-
 export default App;
